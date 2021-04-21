@@ -28,6 +28,6 @@ def upload_file(file_name, bucket, object_name=None):
 
 if __name__ == '__main__':
     s3 = boto3.client('s3')
-    filename = "UPLOAD-TEST.csv"
+    filename = "C:\\dev\\git\\scripts\\UPLOAD-TEST.csv"
     #with open(filename) as f:
-    s3.upload_file(filename, "bdi-dataset-csv-files", filename)
+    s3.upload_file(filename, "bdi-dataset-csv-files", "UPLOAD-TEST.csv")
